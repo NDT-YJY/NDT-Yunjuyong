@@ -105,11 +105,43 @@ h6 {
 
 /* Modal*/
 
-.modal-dialog{
-  max-width: 50%;
+@media (max-width: 640px) {
+  .modal-dialog {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 95%;
+    max-width: none;
+  }
 
+  .modal-content {
+    height: 90vh;
+  }
+
+  .modal-body img {
+    width: 100%;
+    height: auto;
+  }
 }
-/* Modal end*/
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .modal-dialog {
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 80%;
+    max-width: none;
+  }
+
+  .modal-content {
+    height: 80vh;
+  }
+
+  .modal-body img {
+    width: 100%;
+    height: auto;
+  }
+}
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -1122,11 +1154,14 @@ section,
   z-index: 1;
 }
 
-/* 스위퍼 */
+/* .video-container 클래스를 사용하여 반응형으로 조정 */
 .video-container {
   position: relative;
-  height: 0;
   padding-bottom: 56.25%;
+  /* 16:9 비율 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .video-container iframe {
