@@ -142,9 +142,14 @@ h6 {
     height: auto;
   }
 }
-.modal-dialog {
-  max-width: 80%;
+@media (min-width: 1024px) {
+  .modal-dialog {
+    width: 80%; /* 너비를 80%로 설정 */
+    max-width: none; /* 최대 너비 제한 해제 */
+    margin: auto; /* 중앙 정렬 */
+  }
 }
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
