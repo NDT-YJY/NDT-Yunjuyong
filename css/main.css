@@ -142,6 +142,9 @@ h6 {
     height: auto;
   }
 }
+.modal-dialog {
+  max-width: 80%;
+}
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
