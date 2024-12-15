@@ -1202,18 +1202,12 @@ section,
 }
 /*네비게이션 화살표 추가 실험*/
 
-.swiper-button-next {
-    right: 10px; /* 오른쪽 화살표 위치 조정 */
-}
 
-.swiper-button-prev {
-    left: 10px; /* 왼쪽 화살표 위치 조정 */
-}
 
 .swiper-button-next,
 .swiper-button-prev {
   color: var(--accent-color); /* 화살표 색상 */
-  width: 44px; /* 화살표 너비 */
+  width: 64px; /* 화살표 너비 */
   height: 44px; /* 화살표 높이 */
 }
 
