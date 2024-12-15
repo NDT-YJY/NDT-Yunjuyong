@@ -159,26 +159,6 @@
 
   });
 
-// script.js 화살표 실험
-document.addEventListener("DOMContentLoaded", function() {
-    initSwiper();
-});
-
-function initSwiper() {
-    document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
-        let config = JSON.parse(swiperElement.querySelector(".swiper-config").innerHTML.trim());
-
-        config = {
-            ...config,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
-            }
-        };
-
-        new Swiper(swiperElement, config);
-    });
-}
 
   
   /**
