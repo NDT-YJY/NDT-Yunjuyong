@@ -1200,6 +1200,19 @@ section,
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
+/*네비게이션 화살표 추가 실험*/
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--accent-color); /* 화살표 색상 */
+  width: 44px; /* 화살표 너비 */
+  height: 44px; /* 화살표 높이 */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px; /* 화살표 아이콘 크기 */
+}
+
 
 /*--------------------------------------------------------------
 # Contact Section
